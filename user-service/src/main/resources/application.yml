@@ -1,0 +1,11 @@
+server:
+  port: 8081 # Port du User-Service
+
+spring:
+  application:
+    name: user-service # Nom unique du service pour Eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # Adresse de votre serveur Eureka

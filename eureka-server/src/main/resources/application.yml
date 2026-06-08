@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    # Désactive le mode sécurité qui bloque les suppressions d'instances
+    enable-self-preservation: false
+    # Force Eureka à nettoyer les instances mortes toutes les 5 secondes
+    eviction-interval-timer-in-ms: 5000
+    # Optionnel : permet d'avoir une réponse plus rapide dans l'UI
+    response-cache-update-interval-ms: 5000
